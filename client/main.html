@@ -3,12 +3,20 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div class = "container">
+    <header>
+      <h1>Todo list for today</h1>
+        <form class = "todo-list">
+          <input type = "text" name = "title" placeholder = "new task for today">
+          <input type = "submit" value = "Submit">
+        </form>
+    </header>
   <ul>
     {{#each todos}}
         {{> list}}
     {{/each}}
   </ul>
+  </div>
 </body>
 
 <template name="list">
